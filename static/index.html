@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Discount Ascii Warehouse</title>
+
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+
+        <!-- third party scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+                integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- found this library to process time :) (no need to reinvent the wheel) -->
+        <script src="third-party/moment.js"></script>
+
+        <!-- My scripts -->
+        <script src="src/ProductDateHandler.js"></script>
+        <script src="src/JSONHandler.js"></script>
+        <script src="src/ProductHandler.js"></script>
+        <script src="src/ScrollHandler.js"></script>
+        <script src="src/RandomIdGenerator.js"></script>
+        <script src="src/AdHandler.js"></script>
+        <script src="src/ProductRenderer.js"></script>
+        <script src="src/ProductGridRenderer.js"></script>
+        <script src="src/ProductSortHandler.js"></script>
+    </head>
+
+    <body>
+
+        <div class="panel pane-default">
+
+            <div class="panel-body">
+
+                <h1>Discount Ascii Warehouse</h1>
+                <p>Here you're sure to find a bargain on some of the finest ascii available to purchase. Be sure to peruse our selection of ascii faces in an exciting range of sizes and prices.</p>
+
+            </div>
+
+        </div>
+
+        <div class="panel pane-default">
+
+            <div class="panel-body">
+
+                <p>Sort By: <a id="sort-by-size" href="#">Size</a> | <a id="sort-by-price" href="#">Price</a> | <a id="sort-by-id" href="#">Id</a></p>
+
+            </div>
+
+        </div>
+
+        <section id="products"></section>
+
+        <script>
+            var renderer = ProductGridRenderer.new('#products');
+            renderer.init();
+            ProductSortHandler.handleSort(renderer);
+        </script>
+
+    </body>
+
+</html>

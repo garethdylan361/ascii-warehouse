@@ -1,0 +1,15 @@
+body{
+    padding:2%;
+}
+.panel {
+    text-align: center;
+}
+.panel-body {
+    min-height:100px;
+}
+
+.panel-default {
+    border-color: #ddd;
+    border: 0;
+    box-shadow: none;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "discount-ascii-warehouse",
+  "private": true,
+  "version": "0.2.0",
+  "description": "For all your ascii needs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gareth Small",
+  "license": "ISC",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "ecstatic": "^1.4.1",
+    "env": "0.0.2",
+    "fs": "0.0.1-security",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.1.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
